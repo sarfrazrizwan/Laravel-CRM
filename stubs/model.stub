@@ -1,0 +1,18 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Helpers\DateTimeHelper;
+use Illuminate\Database\Eloquent\Model;
+use App\Traits\UUID;
+
+class {{ class }} extends Model
+{
+    use UUID;
+    protected $guarded = ['id', 'uuid'];
+
+    public function getCreatedDateAttribute()
+    {
+        return DateTimeHelper::getDateTime($this->created_at);
+    }
+}

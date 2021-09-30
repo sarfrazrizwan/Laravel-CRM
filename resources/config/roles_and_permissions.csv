@@ -1,0 +1,2 @@
+permission_name,permission_display_name,permission_description,super-admin;Super Admin,company-admin;Company Admin,user;User,supervisor;Supervisor
+configure-system,Configure System,Configure System,y,n,n,n
